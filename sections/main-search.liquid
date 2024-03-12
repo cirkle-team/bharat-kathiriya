@@ -1,0 +1,16 @@
+<style>
+  div#shopify-section-template--14948830445658__main {
+    margin: 250px;
+  }
+</style>
+
+{% for item in search.results %}
+  {% if item.object_type == 'product' %}
+    <div class="product-item" style="">
+
+      {{ item.title }}
+      {{ item.price | money }}
+
+    </div>
+  {% endif %}
+{% endfor %}

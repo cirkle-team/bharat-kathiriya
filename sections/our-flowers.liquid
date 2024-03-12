@@ -1,0 +1,66 @@
+{% schema %}
+  {
+  "name": "our-flowers",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_banner",
+      "label": "Hero Banner"
+    }
+  ],
+  "presets": [
+    {
+      "name": "our-flowers"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+
+  <section class="our-flowers">
+      <div class="container">
+          <div class="section-title text-center">
+              <h2>
+                  <span class="subtitle">OUR FLOWERS</span>
+                  We source the freshest seasonal flowers from Perth growers and
+                  Australian farms.
+              </h2>
+              <a href="#" class="link-btn">VIEW ALL</a>
+          </div>
+          <div class="product-wrapper">
+              <div class="product-grid mobile_only_product_slider">
+                   
+
+                    {% for product in collections.all.products limit: 4 %}
+
+                        <div class="product-widget">
+                            <div class="product-widget-inner text-center">
+                                <div class="product-img-box">
+                                    <a href="{{ product.url }}" class="product-img">
+                                        <img src="{{ product.featured_image.src | img_url: '1024x' }}" alt="">
+                                    </a>
+                                    <div class="product-img-hover">
+                                        <a href="{{ product.url }}">SHOP NOW</a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h6><a href="{{ product.url }}">{{ product.title }}</a></h6>
+                                    <p class="price">
+                                        {{ product.price | money_with_currency }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                   {% endfor %}
+         
+
+              </div>
+          </div>
+      </div>
+  </section>
+{% javascript %}
+{% endjavascript %}

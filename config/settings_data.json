@@ -1,0 +1,21 @@
+{
+  "current": {
+    "facebook_url": "https:\/\/www.facebook.com\/",
+    "insta_url": "https:\/\/www.instagram.com\/",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

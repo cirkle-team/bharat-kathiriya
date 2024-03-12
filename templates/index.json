@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "7ef56995-aead-4122-8a4e-a403b3164142": {
+      "type": "Full-width-video",
+      "settings": {
+        "mp4_video": ""
+      }
+    },
+    "197ea162-bf13-4d5f-b1ed-0e2365392617": {
+      "type": "our-flowers",
+      "settings": {
+      }
+    },
+    "f9de9bcd-1bf6-4c33-900a-dbd4b7904b87": {
+      "type": "our-vision-section",
+      "settings": {
+      }
+    },
+    "790d70fd-6f39-40bc-8cd4-3a2672f42d8b": {
+      "type": "how-it-works-section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "7ef56995-aead-4122-8a4e-a403b3164142",
+    "197ea162-bf13-4d5f-b1ed-0e2365392617",
+    "f9de9bcd-1bf6-4c33-900a-dbd4b7904b87",
+    "790d70fd-6f39-40bc-8cd4-3a2672f42d8b"
+  ]
+}
